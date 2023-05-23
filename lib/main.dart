@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import 'ui/screens/animated_donut_chart.dart';
 import 'ui/screens/canvas_custompaint_simple.dart';
+import 'ui/screens/particles_animation_screen.dart';
 import 'ui/screens/talk_interactive_screen.dart';
 
 void main() {
@@ -68,7 +69,12 @@ class MyHomeScreen extends StatelessWidget {
                 onPressed: () {
                   push(context, const AnimatedDonutChart());
                 },
-                child: const Text('Animated Donut Chart'))
+                child: const Text('Animated Donut Chart')),
+            ElevatedButton(
+                onPressed: () {
+                  push(context, const ParticlesAnimationScreen());
+                },
+                child: const Text('Particles animation'))
           ],
         ));
   }
